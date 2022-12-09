@@ -21,13 +21,14 @@ body{
     top: 50%;
     left: 50%;
     translate: -50% -50%;
-    width: 350px;
-    height: 300px;
+    width: 340px;
+    height: 340px;
     background: radial-gradient(circle at top, var(--dark-blue), var(--very-dark-blue));
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    /* gap: 16px; */
     padding: 1.5rem;
 }
 .circle{
@@ -51,5 +52,22 @@ p{
     justify-content: space-evenly;
 }
 span{
-    font-size: 2rem;
+    font-size: 1.8rem;
+}
+.submit{
+    background-color: var(--orange);
+    border: none;
+    border-radius: 1rem;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    font-size: 16px;
+}
+.crs:hover{
+    cursor: pointer;
+    background-color: var(--light-gray);
+}
+.submit:hover{
+    background-color: white;
+    color: var(--orange);
 }
